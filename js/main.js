@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function(e){
     //     siteLinks.innerHTML+="<a href='https://bs37v5e6er.loclx.io'>Alphabet Scriptor (Web Version)</a> <button onclick=location.href='mailto:6142089419@txt.att.net?subject=`Broken Link: Alphabet Scriptor'>Report Broken</button><br>";
     // }
 
-    fetch('./tophersites/js/messages.json')
+    fetch('./js/messages.json')
         .then(function(data){
             if(data.showMessages == true){
                 document.querySelector(".dashboardMessages").style.display = "block";
