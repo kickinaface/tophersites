@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(e){
     fetch('./js/messages.json')
         .then(function(data){
-            console.log("data ", data[0]);
+            console.log("data ", data);
             if(data[0].showMessages == true){
                 document.querySelector(".dashboardMessages").style.display = "block";
                 document.querySelector(".dashboardMessages span").innerHTML = data.message;
