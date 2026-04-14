@@ -1,6 +1,6 @@
 var homepageMessages = {
     message:"BMAX is down for maintenance...",
-    showMessages: true
+    showMessages: false
 };
 document.addEventListener("DOMContentLoaded", function(e){
     //load messages
