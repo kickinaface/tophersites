@@ -1,18 +1,11 @@
+var homepageMessages = {
+    message:"BMAX is down for maintenance...",
+    showMessages: true
+};
 document.addEventListener("DOMContentLoaded", function(e){
-    fetch('./js/messages.json')
-        .then(function(data){
-            console.log("data ", data);
-            console.log(JSON.stringify(data));
-            console.log(JSON.parse(data));
-            if(data[0].showMessages == true){
-                document.querySelector(".dashboardMessages").style.display = "block";
-                document.querySelector(".dashboardMessages span").innerHTML = data.message;
-            }
-        })
-        .then(function(data){
-            console.log(data);
-        })
-        .catch(function(err){
-            console.error('Error:', err)
-        });
+    //load messages
+    var dashboardMessages = document.querySelector(".dashboardMessages");
+    if(homepageMessages.showMessages == true){
+        dashboardMessages.querySelector("span").innerHTML = homepageMessages.message;
+    }
 });
