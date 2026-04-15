@@ -1,6 +1,6 @@
 var homepageMessages = {
     message:"Performing maintenance tasks...",
-    showMessages: true
+    showMessages: false
 };
 document.addEventListener("DOMContentLoaded", function(e){
     //load messages
