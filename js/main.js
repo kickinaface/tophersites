@@ -1,5 +1,5 @@
 var homepageMessages = {
-    message:"Performing maintenance tasks...",
+    message:"Performing BMAX maintenance tasks...",
     showMessages: false
 };
 document.addEventListener("DOMContentLoaded", function(e){
